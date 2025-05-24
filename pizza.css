@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+
+  .topbar {
+    background-color: #a00000;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .topbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .topbar .halal {
+    margin-left: auto;
+    margin-right: 10px;
+
+  }
+
+  .navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+
+  .navbar .deals {
+    background-color: #fbb03b;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .start-order {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .section-title {
+    height: 130px;
+    background-image: url("assets/3.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.658) ;
+  }
+
+  .categories button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+    color: white;
+  }
+
+  .categories button:hover {
+    color: #d32f2f;
+  }
+
+  .menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px 40px;
+  }
+
+  .pizza-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pizza-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .pizza-title {
+    color: #d32f2f;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .pizza-desc {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .pizza-options {
+    margin-bottom: 10px;
+  }
+
+  .pizza-options select {
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  .button-group {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}
+
+.button-group button {
+flex: 1;
+padding: 8px 12px;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.customize-btn {
+background-color: lightgray;
+color: black;
+}
+
+.customize-btn:hover {
+background-color: lightgray;
+}
+
+.add-btn {
+background-color: #d32f2f;
+color: white;
+}
+
+.add-btn:hover {
+background-color: #b71c1c;
+}
+
+
+  @media (max-width: 768px) {
+    .pizza-card {
+      width: 100%;
+      max-width: 90%;
+    }
+
+    .topbar {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .topbar .halal {
+      margin-left: 0;
+    }
+  }
